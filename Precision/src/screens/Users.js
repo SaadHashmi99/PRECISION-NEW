@@ -25,7 +25,7 @@ const NewAnalysis = () => {
           <View style={STYLES.headView}>
           <Text style={STYLES.headText}> PRECISION AUTOS MANAGEMENT SYSTEM </Text>
         </View> 
-        <TouchableOpacity onPress={() => setModalVisibleMenu(true)}>
+        <TouchableOpacity onPress={() => navigation.openDrawer()}>
           <Ionicons name='menu-outline' style={{marginTop: 13, marginLeft: 10}} size={30} color={colors.TEXT} />
         </TouchableOpacity>  
         <Text style={STYLES.Heading}>USER AND ROLES</Text>      
@@ -36,9 +36,9 @@ const NewAnalysis = () => {
           <ScrollView>          
             <View style={{margin: 10, marginTop: 30}}>
               <Grid>
-                <Col size={10}>
+                <Col size={14}>
                   <Row style={[STYLES.RowView, {borderTopLeftRadius: 15, height: 60, backgroundColor: colors.SECONDARY}]}>
-                    <Text style={[STYLES.tableText, {fontWeight: 'bold', color: '#ffffff', fontSize: 14}]}>S No</Text>
+                    <Text style={[STYLES.tableText, {fontWeight: 'bold', color: '#000', fontSize: 14}]}>S No</Text>
                   </Row>
                   <Row style={[STYLES.RowView, {height: 70, backgroundColor: '#ffffff'}]}>
                     <Text style={[STYLES.tableText, {fontSize: 12, fontWeight: 'bold'}]}> 1. </Text>
@@ -50,9 +50,9 @@ const NewAnalysis = () => {
                     <Text style={[STYLES.tableText, {fontSize: 12, fontWeight: 'bold'}]}> 3. </Text>
                   </Row>
                 </Col>
-                <Col size={28}>
+                <Col size={26}>
                   <Row style={[STYLES.RowView, {height: 60, backgroundColor: colors.SECONDARY}]}>
-                    <Text style={[STYLES.tableText, {fontWeight: 'bold', color: '#ffffff', fontSize: 14}]}>EMPLOYEE</Text>
+                    <Text style={[STYLES.tableText, {fontWeight: 'bold', color: '#000', fontSize: 14}]}>EMPLOYEE</Text>
                   </Row>
                   <Row style={[STYLES.RowView, {height: 70, backgroundColor: '#ffffff'}]}>
                     <Text style={[STYLES.tableText, {fontSize: 12, fontWeight: 'bold'}]}>Saad Ali</Text>
@@ -64,9 +64,9 @@ const NewAnalysis = () => {
                     <Text style={[STYLES.tableText, {fontSize: 12, fontWeight: 'bold'}]}>Rizwan Khan</Text>
                   </Row>
                 </Col>
-                <Col size={23}>
+                <Col size={22}>
                   <Row style={[STYLES.RowView, {height: 60, backgroundColor: colors.SECONDARY}]}>
-                    <Text style={[STYLES.tableText, {fontWeight: 'bold', color: '#ffffff', fontSize: 14}]}>ROLE</Text>
+                    <Text style={[STYLES.tableText, {fontWeight: 'bold', color: '#000', fontSize: 14}]}>ROLE</Text>
                   </Row>
                   <Row style={[STYLES.RowView, {height: 70, backgroundColor: '#ffffff'}]}>
                     <Text style={[STYLES.tableText, {fontSize: 12, fontWeight: 'bold'}]}>Painter</Text>
@@ -80,7 +80,7 @@ const NewAnalysis = () => {
                 </Col>
                 <Col size={27}>
                   <Row style={[STYLES.RowView, {height: 60, backgroundColor: colors.SECONDARY}]}>
-                    <Text style={[STYLES.tableText, {fontWeight: 'bold', color: '#ffffff', fontSize: 14}]}>USERNAME</Text>
+                    <Text style={[STYLES.tableText, {fontWeight: 'bold', color: '#000', fontSize: 14}]}>USERNAME</Text>
                   </Row>
                   <Row style={[STYLES.RowView, {height: 70, backgroundColor: '#ffffff'}]}>
                     <Text style={[STYLES.tableText, {fontSize: 12, fontWeight: 'bold'}]}>saad786</Text>
@@ -94,7 +94,7 @@ const NewAnalysis = () => {
                 </Col>
                 <Col size={25}>
                   <Row style={[STYLES.RowView, {borderTopRightRadius: 15, height: 60, backgroundColor: colors.SECONDARY}]}>
-                    <Text style={[STYLES.tableText, {fontWeight: 'bold', color: '#ffffff', fontSize: 14}]}>ACTIONS</Text>
+                    <Text style={[STYLES.tableText, {fontWeight: 'bold', color: '#000', fontSize: 14}]}>ACTIONS</Text>
                   </Row>
                   <Row style={[STYLES.RowView, {height: 70, backgroundColor: '#ffffff', flexDirection: 'column'}]}>
                     <TouchableOpacity>
@@ -126,7 +126,7 @@ const NewAnalysis = () => {
                 <Text style={[STYLES.appButton, {alignSelf: 'center', marginTop: 20}]}>NEXT</Text>
               </TouchableOpacity>
             </View>
-            <Modal
+            {/* <Modal
               transparent={true}
               isVisible={modalVisibleMenu}
               animationIn="slideInLeft"
@@ -148,7 +148,7 @@ const NewAnalysis = () => {
                       <Text></Text>
                   </ScrollView>
               </LinearGradient>
-            </Modal>
+            </Modal> */}
               <Text></Text>
               <Text></Text>
               <Text></Text>

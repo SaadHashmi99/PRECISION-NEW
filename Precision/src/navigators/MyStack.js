@@ -25,19 +25,18 @@ const Stack = createNativeStackNavigator();
 
 export default function MyStack() {
   return (
-    <NavigationContainer>
       <Stack.Navigator initialRouteName="Login">
-        {/* <Stack.Screen
+        <Stack.Screen
           name="NewRegistration"
           component={NewRegistration}
           options={{headerShown: false}}
-        /> */}
-        {/* <Stack.Screen
+        />
+         <Stack.Screen
           name="Registration"
           component={Registration}
           options={{headerShown: false}}
-        /> */}
-        {/* <Stack.Screen
+        />
+        <Stack.Screen
           name="NewAnalysis"
           component={NewAnalysis}
           options={{headerShown: false}}
@@ -111,7 +110,7 @@ export default function MyStack() {
           name="Dashboard"
           component={Dashboard}
           options={{headerShown: false}}
-        /> */}
+        />
         <Stack.Screen
           name="Login"
           component={Login}
@@ -122,20 +121,11 @@ export default function MyStack() {
           component={Dashboard}
           options={{headerShown: false}}
         />
-        {/* <Stack.Screen
+        <Stack.Screen
           name="CameraScan"
           component={CameraScan}
           options={{headerShown: false}}
-        /> */}
+        />
       </Stack.Navigator>
-    </NavigationContainer>
   );
-}
-
-{
-  /* <Drawer.Screen
-          name="Login"
-          component={Login}
-          options={{headerShown: false}}
-        /> */
 }
