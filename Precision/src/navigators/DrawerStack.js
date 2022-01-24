@@ -29,7 +29,7 @@ const Stack = createNativeStackNavigator();
 
 export default function DrawerStack() {
   return (
-    <Drawer.Navigator drawerContent={props => <CustomDrawer {...props} />}>
+    <Drawer.Navigator initialRouteName='Dashboard' drawerContent={props => <CustomDrawer {...props} />}>
       <Drawer.Screen
         name="NewRegistration"
         component={NewRegistration}
